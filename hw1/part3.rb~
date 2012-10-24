@@ -1,0 +1,10 @@
+def combine_anagrams(words)
+	ang_groups={}
+	words.each do |word|
+	ang_type = word.downcase.split('').sort.join
+	res[ang_type] ||= []
+	res[ang_type] << word
+end
+	p ang_groups.values
+
+end
